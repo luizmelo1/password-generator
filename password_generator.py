@@ -1,4 +1,4 @@
-import random
+import secrets
 
 upper_case = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
 lower_case = "abcdefghijklmnopqrstuvwxyz"
@@ -7,18 +7,19 @@ special_characters = "!@#$%^&*()-_=+[]{}/;:,.<>?"
 password_list = []
 x = 1
 all_characters = upper_case + lower_case + numbers + special_characters
+random_generator = secrets.SystemRandom()
 
 while True:
     try:
         number_characters = int(input("Digite o número de caracteres que deseja na senha: "))
-        if number_characters > len(all_characters) or number_characters <= 0:
-            print(f"Por favor, insira um número entre 1 e {len(all_characters)}.")
+        if number_characters <= 0:
+            print(f"Por favor, insira um número maior que 0.")
             continue
     except ValueError:
         print("Entrada inválida! Por favor, insira um número inteiro.")
         continue
 
-    password = "".join(random.sample(all_characters, number_characters))
+    password = "".join(random_generator.choices(all_characters, k=number_characters))
     password_list.append(f'Senha {x}: {password}')
     print(f'Essa é a senha gerada: {password}')
     x += 1
