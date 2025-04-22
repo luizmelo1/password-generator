@@ -1,2 +1,2 @@
 # password-generator
- Gerador de Senha em Python
+ Gerador de Senha em Python.
