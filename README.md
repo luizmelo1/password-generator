@@ -87,4 +87,4 @@ git push origin feature/nova-feature
 
   - Adicionar busca no histórico
 
-  Desenvolvido por [Luiz Felipe Melo]
+  Desenvolvido por **Luiz Felipe Melo**
