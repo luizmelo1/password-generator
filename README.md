@@ -25,15 +25,15 @@ Uma aplicação desktop para geração de senhas seguras com interface intuitiva
 
 **Clone o repositório:**  
  ```bash  
- git clone https://github.com/seu-usuario/gerador-senhas.git  
+ git clone https://github.com/luizmelo1/password-generator.git 
  ```  
 **Acesse a pasta do projeto:**  
  ```bash  
- cd gerador-senhas  
+ cd password-generator  
  ```  
 **Execute o programa:**  
  ```bash  
- python senhas.py  
+ python password-generator.py  
  ```
 
 # Interface do Usuário 🖼️
@@ -88,4 +88,3 @@ git push origin feature/nova-feature
   - Adicionar busca no histórico
 
   Desenvolvido por [Luiz Felipe Melo]
-  
