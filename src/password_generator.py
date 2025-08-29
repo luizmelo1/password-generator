@@ -6,7 +6,7 @@ from tkinter import ttk, messagebox
 upper_case = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
 lower_case = "abcdefghijklmnopqrstuvwxyz"
 numbers = "0123456789"
-special_characters = "!@#$%^&*()-_=+[]{}/;:,.<>?"
+special_characters = "!@#$%^&*()-_=+[]}{/;:,.<>?"
 all_chars = upper_case + lower_case + numbers + special_characters
 rng = secrets.SystemRandom()
 
